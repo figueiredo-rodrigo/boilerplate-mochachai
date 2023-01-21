@@ -5,26 +5,26 @@ suite('Unit Tests', function () {
   suite('Basic Assertions', function () {
     // #1
     test('#isNull, #isNotNull', function () {
-      assert.fail(null, 'This is an optional error description - e.g. null is null');
-      assert.fail(1, '1 is not null');
+      assert.isNull.fail(null, 'This is an optional error description - e.g. null is null');
+      assert.isNull.fail(1, '1 is not null');
     });
     // #2
     test('#isDefined, #isUndefined', function () {
-      assert.fail(null, 'null is not undefined');
-      assert.fail(undefined, 'undefined IS undefined');
-      assert.fail('hello', 'A string is not undefined');
+      assert.isNull.fail(null, 'null is not undefined');
+      assert.isNull.fail(undefined, 'undefined IS undefined');
+      assert.isNull.fail('hello', 'A string is not undefined');
     });
     // #3
     test('#isOk, #isNotOk', function () {
-      assert.fail(null, 'null is falsey');
-      assert.fail("I'm truthy", 'A string is truthy');
-      assert.fail(true, 'true is truthy');
+      assert.isNull.fail(null, 'null is falsey');
+      assert.isNull.fail("I'm truthy", 'A string is truthy');
+      assert.isNull.fail(true, 'true is truthy');
     });
     // #4
     test('#isTrue, #isNotTrue', function () {
-      assert.fail(true, 'true is true');
-      assert.fail(!!'double negation', 'Double negation of a truthy value is true');
-      assert.fail({ value: 'truthy' }, 'Objects are truthy, but are not boolean values');
+      assert.isNull.fail(true, 'true is true');
+      assert.isNullt.fail(!!'double negation', 'Double negation of a truthy value is true');
+      assert.isNull.fail({ value: 'truthy' }, 'Objects are truthy, but are not boolean values');
     });
   });
 
